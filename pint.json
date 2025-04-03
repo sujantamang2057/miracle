@@ -1,0 +1,13 @@
+{
+    "preset": "laravel",
+    "exclude": ["config", "database", "node_modules", "public", "storage", "tests", "vendor"],
+    "notName": ["*Test.php"],
+    "rules": {
+        "concat_space": {
+            "spacing": "one"
+        },
+        "no_multiple_statements_per_line": false,
+        "not_operator_with_successor_space": false,
+        "single_trait_insert_per_statement": false
+    }
+}

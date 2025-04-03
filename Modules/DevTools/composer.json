@@ -1,0 +1,30 @@
+{
+    "name": "miracle/devtools",
+    "description": "",
+    "authors": [
+        {
+            "name": "MI Developer",
+            "email": "developer_mi@yonefu.info",
+            "homepage": "https://miracleinterface.com.np",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\DevTools\\": "app/",
+            "Modules\\DevTools\\Database\\Factories\\": "database/factories/",
+            "Modules\\DevTools\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\DevTools\\Tests\\": "tests/"
+        }
+    }
+}

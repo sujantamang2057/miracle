@@ -1,0 +1,30 @@
+{
+    "name": "mi/common",
+    "description": "",
+    "authors": [
+        {
+            "name": "MI Developer",
+            "email": "developer_mi@yonefu.info"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Common\\": "app/",
+            "Modules\\Common\\Database\\Factories\\": "database/factories/",
+            "Modules\\Common\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Common\\Tests\\": "tests/"
+        }
+    }
+}

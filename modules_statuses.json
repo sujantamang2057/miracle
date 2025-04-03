@@ -1,0 +1,8 @@
+{
+    "Common": true,
+    "Sys": true,
+    "CmsAdmin": true,
+    "DevTools": true,
+    "Tools": true,
+    "Cms": true
+}

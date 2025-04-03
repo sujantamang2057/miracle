@@ -1,0 +1,18 @@
+@forward 'themes/vars';
+@forward 'themes/fonts';
+@forward 'themes/top';
+@forward 'themes/styles';
+@forward 'themes/activity';
+@forward 'themes/reservation';
+@forward 'themes/contact';
+@forward 'themes/news-campaign';
+@forward 'themes/travel';
+@forward 'themes/search';
+
+@forward 'themes/faq';
+@forward 'themes/resources';
+@forward 'themes/video';
+@forward 'themes/gallery';
+@forward 'themes/post';
+@forward 'themes/site-map';
+@import '~sweetalert2/dist/sweetalert2.min.css';

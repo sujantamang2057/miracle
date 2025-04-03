@@ -1,0 +1,94 @@
+@use './vars' as *;
+@use 'sass:color';
+
+@font-face {
+    font-family: 'Engravers MT';
+    src: url('../../common/fonts/EngraversMT.eot');
+    src: url('../../common/fonts/EngraversMT.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../common/fonts/EngraversMT.woff2') format('woff2'),
+        url('../../common/fonts/EngraversMT.woff') format('woff'),
+        url('../../common/fonts/EngraversMT.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT Poster Compressed';
+    src: url('../../common/fonts/BodoniMTPosterCompressed.eot');
+    src: url('../../common/fonts/BodoniMTPosterCompressed.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../common/fonts/BodoniMTPosterCompressed.woff2') format('woff2'),
+        url('../../common/fonts/BodoniMTPosterCompressed.woff') format('woff'),
+        url('../../common/fonts/BodoniMTPosterCompressed.ttf')
+            format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Harrington';
+    src: url('../../common/fonts/Harrington.eot');
+    src: url('../../common/fonts/Harrington.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../common/fonts/Harrington.woff2') format('woff2'),
+        url('../../common/fonts/Harrington.woff') format('woff'),
+        url('../../common/fonts/Harrington.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Learning Curve';
+    src: url('../../common/fonts/LearningCurve.eot');
+    src: url('../../common/fonts/LearningCurve.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../common/fonts/LearningCurve.woff2') format('woff2'),
+        url('../../common/fonts/LearningCurve.woff') format('woff'),
+        url('../../common/fonts/LearningCurve.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Imprint MT Shadow';
+    src: url('../../common/fonts/ImprintMT-Shadow.eot');
+    src: url('../../common/fonts/ImprintMT-Shadow.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../common/fonts/ImprintMT-Shadow.woff2') format('woff2'),
+        url('../../common/fonts/ImprintMT-Shadow.woff') format('woff'),
+        url('../../common/fonts/ImprintMT-Shadow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Holland';
+    src: url('../../common/fonts/Holland.eot');
+    src: url('../../common/fonts/Holland.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../common/fonts/Holland.woff2') format('woff2'),
+        url('../../common/fonts/Holland.woff') format('woff'),
+        url('../../common/fonts/Holland.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quickpen';
+    src: url('../../common/fonts/Quickpen.eot');
+    src: url('../../common/fonts/Quickpen.eot?#iefix')
+            format('embedded-opentype'),
+        url('../../common/fonts/Quickpen.woff2') format('woff2'),
+        url('../../common/fonts/Quickpen.woff') format('woff'),
+        url('../../common/fonts/Quickpen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,26 @@
+@use './vars' as *;
+@use 'sass:color';
+
+.video-box {
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+
+    figure {
+        border-radius: 4px;
+        aspect-ratio: 1.5;
+        overflow: hidden;
+    }
+
+    .bi-play-fill {
+        font-size: 80px;
+        color: $brown-100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}

@@ -1,0 +1,12 @@
+@use './vars' as *;
+@use 'sass:color';
+
+.sitemap-wrapper {
+    ul {
+        list-style-type: none;
+    }
+
+    a:hover {
+        text-decoration: underline !important;
+    }
+}

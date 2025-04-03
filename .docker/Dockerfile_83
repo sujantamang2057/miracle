@@ -1,0 +1,73 @@
+# Dockerfile_83
+# pb@2025_02_13
+
+# FROM php:8.3-fpm
+FROM php:8.3.15-fpm
+# Better to use versions 0/5 like 3.15/3.20
+
+LABEL maintainer="Pratap Baniya <pratap.baniya@gmail.com>"
+
+ENV USER=www
+ENV GROUP=www
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    git \
+    curl \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libmcrypt-dev \
+    libgd-dev \
+    jpegoptim optipng pngquant gifsicle \
+    libonig-dev \
+    libxml2-dev \
+    libwebp-dev \
+    zip \
+    sudo \
+    unzip
+
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install PHP extensions
+RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-webp
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+
+# Install php-zip
+RUN apt-get update && apt-get install -y \
+    zlib1g-dev libzip-dev
+RUN docker-php-ext-install zip
+
+# Install SSL and PHP FTP extension
+RUN apt-get update && apt-get install -y \
+libssl-dev
+RUN docker-php-ext-configure ftp --with-openssl-dir=/usr \
+    && docker-php-ext-install ftp
+
+# Install Postgres PDO
+RUN apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pdo pdo_pgsql
+
+# Get latest Composer
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+
+# Setup working directory
+WORKDIR /var/www/
+
+# Create User and Group
+RUN groupadd -g 1000 ${GROUP} && useradd -u 1000 -ms /bin/bash -g ${GROUP} ${USER}
+
+# Grant Permissions
+RUN chown -R ${USER} /var/www
+
+# Select User
+USER ${USER}
+
+# Copy permission to selected user
+COPY --chown=${USER}:${GROUP} . .
+
+EXPOSE 9000
+
+CMD ["php-fpm"]

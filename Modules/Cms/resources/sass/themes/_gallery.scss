@@ -1,0 +1,58 @@
+@use './vars' as *;
+@use 'sass:color';
+
+.sc-gallery-list-page {
+    .image-box {
+        a {
+            height: 210px;
+            overflow: hidden;
+            display: block;
+        }
+        img {
+            object-fit: cover;
+            object-position: center;
+            aspect-ratio: 1.5;
+        }
+    }
+}
+
+.ginner-container {
+    display: flex !important;
+    flex-direction: column !important;
+    img {
+        max-height: 80vh;
+    }
+}
+
+.glightbox-clean .gslide-description {
+    background: $white;
+    margin: 0 auto;
+    max-width: fit-content;
+    width: 100%;
+    top: 0;
+    flex: unset;
+    background: transparent;
+    color: $white;
+    font-size: 20px;
+}
+
+.glightbox-clean .description-right .gdesc-inner {
+    position: static;
+}
+
+.gslide-media.gslide-image {
+    margin-top: 48px;
+}
+
+.gslide-media {
+    margin: 0 auto;
+}
+
+.pagination-wrapper {
+    margin-top: 56px !important;
+    margin-bottom: 24px !important;
+    ul {
+        margin-inline: auto !important;
+        width: fit-content !important;
+    }
+}

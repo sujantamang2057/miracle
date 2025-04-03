@@ -1,0 +1,32 @@
+{
+    "name": "mi/cms",
+    "description": "cms module",
+    "type": "module",
+    "license": "EULA-Clause",
+    "authors": [
+        {
+            "name": "MI Developer",
+            "email": "developer_mi@yonefu.info",
+            "homepage": "https://miracleinterface.com.np",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Cms\\": "app/",
+            "Modules\\Cms\\Database\\Factories\\": "database/factories/",
+            "Modules\\Cms\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Cms\\Tests\\": "tests/"
+        }
+    }
+}

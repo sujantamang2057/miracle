@@ -1,0 +1,37 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/tmp
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+# /.vscode
+## [/.vscode/] removed from gitignore list
+## [settings.json] file committed For SAME CODE formatting
+## Not Working Extensions [Laravel Blade Formatter]
+
+# custom
+*.bak
+/docker-compose.yml
+
+/config/constants-policy.php
+
+/public/css/app.css
+/public/js/app.js
+/public/fonts/*
+/public/theme/cms/*
+/public/theme/infyom/css/backend.css
+/public/theme/infyom/js/backend.js
+/public/js/tinymce
+/public/mix-manifest.json

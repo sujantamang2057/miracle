@@ -1,0 +1,44 @@
+{
+	"[blade]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"editor.defaultFormatter": "shufo.vscode-blade-formatter"
+	},
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[php]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"editor.defaultFormatter": "open-southeners.laravel-pint"
+	},
+	"[scss]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"bladeFormatter.format.indentSize": 4,
+	"bladeFormatter.format.noMultipleEmptyLines": false,
+	"bladeFormatter.format.noPhpSyntaxCheck": false,
+	"bladeFormatter.format.noSingleQuote": false,
+	"bladeFormatter.format.sortHtmlAttributes": "none",
+	"bladeFormatter.format.sortTailwindcssClasses": true,
+	"bladeFormatter.format.useTabs": false,
+	"bladeFormatter.format.wrapAttributes": "auto",
+	"bladeFormatter.format.wrapAttributesMinAttrs": 3,
+	"bladeFormatter.format.wrapLineLength": 150,
+	"editor.codeActionsOnSave": [
+		"editor.formatOnSave",
+		"source.organizeImports",
+		"source.sortImports",
+		"source.fixAll"
+	],
+	"editor.formatOnSave": false
+}

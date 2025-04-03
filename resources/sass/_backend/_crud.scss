@@ -1,0 +1,32 @@
+@use './variables' as *;
+@use 'sass:color';
+
+/* required label */
+form div.required label:after {
+    content: ' * ';
+    color: $redOrange;
+}
+
+.column-gap-5 {
+    column-gap: 5px !important;
+}
+
+.btn {
+    &.btn-warning {
+        color: $white !important;
+    }
+}
+
+.cloneBlock {
+    background: $gray-200;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    &:nth-child(even) {
+        background: $gray-800;
+    }
+
+    input + img {
+        margin-right: 0.75rem;
+    }
+}

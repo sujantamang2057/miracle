@@ -1,0 +1,197 @@
+@use './variables' as *;
+@use 'sass:color';
+
+.sidebar {
+    padding-inline: 0;
+}
+
+.sidebar-mini .main-sidebar .nav-link {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: $black;
+}
+
+.main-sidebar {
+    height: calc(100vh - 1rem);
+    background: $sidebar-bg;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.22) !important;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+
+    .brand-text {
+        color: $white;
+        font-weight: bold !important;
+    }
+
+    .sidebar {
+        a {
+            &:hover {
+                background-color: $sidebar-treeview-active-hover !important;
+
+                &.active {
+                    background-color: $sidebar-treeview-active !important;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        a {
+            color: $dark;
+            border-radius: 0;
+
+            i {
+                color: $dark;
+                font-size: 1rem !important;
+            }
+            &.active {
+                background-color: $sidebar-active !important;
+                &:hover {
+                    background-color: $sidebar-active !important;
+                }
+                i {
+                    color: $white;
+                }
+            }
+        }
+
+        li.menu-open {
+            a.active {
+                background-color: $sidebar-active !important;
+            }
+        }
+    }
+
+    .sidebar nav.mt-2 {
+        margin-top: 0 !important;
+    }
+
+    .nav-sidebar > .nav-item > .nav-link.active {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .brand-link {
+        border-bottom: none;
+        background: $header-bg;
+
+        .brand-image {
+            margin-left: 0px;
+            margin-right: 6px;
+            margin-top: 3px;
+            max-height: 22px;
+        }
+    }
+
+    .nav-treeview > .nav-item > .nav-link.active {
+        font-weight: 500;
+    }
+
+    .nav-treeview > .nav-item > .nav-link {
+        padding-left: 1.2rem;
+    }
+
+    .nav-treeview > .nav-item > .nav-link:focus,
+    .nav-treeview > .nav-item > .nav-link:hover {
+        color: $black;
+    }
+
+    .nav-sidebar > .nav-item.menu-open > .nav-link,
+    .nav-sidebar > .nav-item:hover > .nav-link,
+    .nav-sidebar > .nav-item > .nav-link:focus {
+        color: $black;
+    }
+
+    .nav-sidebar > .nav-item.active.menu-open > .nav-link,
+    .nav-sidebar > .nav-item.active:hover > .nav-link,
+    .nav-sidebar > .nav-item.active > .nav-link:focus {
+        color: $white;
+    }
+
+    .nav-sidebar > .nav-item:hover > .nav-link.active {
+        color: $white;
+    }
+}
+
+[class*='sidebar-dark-'] .nav-treeview > .nav-item > .nav-link.active,
+[class*='sidebar-dark-'] .nav-treeview > .nav-item > .nav-link.active:focus,
+[class*='sidebar-dark-'] .nav-treeview > .nav-item > .nav-link.active:hover {
+    background-color: $gray-200 !important;
+    color: $dark;
+    i {
+        color: $dark;
+    }
+}
+
+.sidebar-collapse .card-footer {
+    width: calc(100% - 80px);
+    left: 65px;
+}
+
+.main-sidebar .nav-treeview > .nav-item > .nav-link {
+    color: #606060;
+}
+
+.sidebar-mini .main-sidebar .nav-link,
+.sidebar-mini-md .main-sidebar .nav-link,
+.sidebar-mini-xs .main-sidebar .nav-link {
+    width: 100% !important;
+    border-radius: 0;
+    padding: 0.5rem;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar,
+.sidebar-mini.sidebar-collapse .main-sidebar::before {
+    margin-left: 0.5rem;
+}
+
+.sidebar-collapse {
+    .main-header .fa-bars {
+        background: transparent;
+
+        &:before,
+        &:after {
+            content: '';
+            background: $white;
+            height: 2px;
+            width: 30px;
+            position: absolute;
+            left: 0;
+        }
+
+        &:before {
+            top: -2px;
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            top: -1px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.img--wrap {
+    position: relative;
+    .remove-image {
+        position: absolute;
+        right: -26px;
+        bottom: -1px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar-collapse .card-footer {
+        left: 0;
+        right: 0;
+        padding-left: 16px;
+        width: calc(100% - 0.35rem) !important;
+
+        .btn {
+            font-size: 12px;
+        }
+    }
+}

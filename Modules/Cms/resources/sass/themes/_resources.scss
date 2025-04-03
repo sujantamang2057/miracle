@@ -1,0 +1,96 @@
+@use './vars' as *;
+@use 'sass:color';
+
+.color-brown-800 {
+    color: $brown-800;
+}
+
+.color-brown-700 {
+    color: $brown-700;
+}
+
+.color-brown-300 {
+    color: $brown-300;
+}
+
+.color-brown-100 {
+    color: $brown-100;
+}
+
+.aspect-ratio-5 {
+    aspect-ratio: 1.5;
+    overflow: hidden;
+
+    img {
+        aspect-ratio: 1.5;
+        object-fit: cover;
+    }
+}
+
+.files-list {
+    .file-box-wrapper {
+        padding: 16px 20px;
+        gap: 8px;
+        border-radius: 8px;
+        border: 1px solid $brown-300;
+        background: $brown-100;
+
+        i {
+            font-size: 50px;
+            margin-top: -16px;
+            max-width: 50px;
+            min-width: 50px;
+            width: 100%;
+            margin-right: 8px;
+        }
+
+        .flex-grow-1 .data {
+            word-break: break-all;
+        }
+
+        a {
+            min-width: fit-content;
+            padding: 0 16px;
+            border-radius: 4px;
+            background: $brown-800;
+            color: $brown-100;
+            height: 44px;
+        }
+    }
+}
+
+.resources-page {
+    select {
+        appearance: none !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        padding: 10px;
+        background-image: url(../../../img/icons/drop-down.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: right 10px center;
+        max-width: 200px;
+        width: 100%;
+        background-color: $brown-90;
+        border-radius: 8px;
+        border: 1px solid $brown-300;
+        color: $brown-800;
+        outline: none;
+
+        option {
+            background-color: $brown-300;
+
+            &:not(:checked) {
+                color: $brown-800;
+                background-color: $brown-90;
+            }
+        }
+    }
+}
+
+.not-found-class {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

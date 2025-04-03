@@ -1,0 +1,319 @@
+@use './vars' as *;
+@use 'sass:color';
+
+.sc-reservation-information {
+    background: $cream;
+    padding-top: 4.25rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 7rem;
+
+    .complete-msg-wrap {
+        font-size: 18px;
+
+        .big-text {
+            a {
+                font-size: 26px;
+                font-weight: 800;
+                color: $themeColor !important;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.sc-reservation-form {
+    padding-bottom: 6rem;
+
+    .reservation-box {
+        h5 {
+            font-size: 24px;
+            border-width: 5px;
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        .radio-btn-wrap strong {
+            min-width: 40px;
+        }
+    }
+
+    .applicant-information .sub-title {
+        background: $themeColor;
+        color: $white;
+        padding: 1rem;
+    }
+
+    .tentative-reservation {
+        padding-top: 1rem !important;
+    }
+}
+
+.reservation-number {
+    background: $themeColor;
+    padding: 2rem;
+
+    .res-reception-no {
+        background: $white;
+        max-width: 600px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        margin-top: 1rem;
+        font-size: 36px;
+    }
+}
+
+.reservation-box {
+    .col-sm-3,
+    .col-sm-9 {
+        padding-block: 1rem;
+    }
+
+    h5 {
+        border-bottom: 3px solid $themeColor;
+    }
+
+    .bi-circle-fill {
+        font-size: 8px;
+        color: $yellow;
+        vertical-align: middle;
+    }
+
+    .tour-overview {
+        li {
+            padding-block: 0.5rem;
+
+            span {
+                display: inline-block;
+
+                &.lt-span {
+                    min-width: 90px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .include-overview {
+        li {
+            padding-block: 0.5rem;
+        }
+    }
+
+    .price-overview {
+        .text-center {
+            font-size: 32px;
+            font-weight: 800;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            small {
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .border-end {
+        border-right: 5px solid $yellow !important;
+        //padding-block: 0.5rem;
+    }
+
+    .reservation-bg {
+        background: #fff7e2;
+        border-radius: 0 6px 6px 0;
+    }
+
+    .radio-btn-wrap {
+        .form-check-inline {
+            min-width: 180px;
+        }
+    }
+
+    .form-control:disabled {
+        border: 0;
+    }
+}
+
+.required {
+    color: #ff0000;
+    min-width: auto !important;
+}
+
+.clone-button {
+    i {
+        padding: 0px 4px;
+        border-radius: 100%;
+    }
+}
+
+.btn-reservation {
+    text-transform: uppercase;
+    background: $pink;
+    color: $white;
+    text-decoration: none;
+    font-size: 20px;
+    min-height: 70px;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 2rem;
+
+    span:after {
+        content: '';
+        background: $white;
+        width: 40px;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+
+    &.btn-reservation-complete {
+        background: $green;
+    }
+}
+
+.btn-back {
+    background: #777777;
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    min-height: 50px;
+    width: 100%;
+    max-width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 2rem;
+
+    span:after {
+        content: '';
+        background: $white;
+        width: 40px;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+}
+
+.complete-msg-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 680.98px) {
+    .sc-reservation-information {
+        padding-top: 3rem;
+        padding-bottom: 1.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .sc-reservation-form {
+        padding-bottom: 3rem;
+    }
+
+    .reservation-button {
+        margin-top: 2rem;
+    }
+
+    .btn-reservation {
+        font-size: 18px;
+        min-height: 55px;
+    }
+
+    .reservation-box {
+        h5 {
+            font-size: 18px !important;
+        }
+
+        li {
+            font-size: 14px;
+        }
+        .tour-overview li {
+            display: flex;
+
+            span.lt-span {
+                min-width: 110px;
+            }
+        }
+
+        .price-overview .text-center {
+            font-size: 26px;
+            height: auto;
+        }
+
+        .include-overview {
+            margin-bottom: 1rem;
+        }
+
+        form .radio-btn-wrap .form-check-inline {
+            min-width: auto;
+        }
+
+        .radio-btn-wrap.mb-2 strong {
+            width: 100%;
+            display: block;
+        }
+
+        .border-end {
+            background: $yellow !important;
+            padding: 0.5rem;
+        }
+
+        .row {
+            margin-inline: 0rem;
+        }
+
+        .col-6 {
+            padding-inline: 0.5rem;
+        }
+    }
+
+    .applicant-information .sub-title {
+        padding: 0.5rem;
+    }
+
+    .sc-reservation-information .complete-msg-wrap {
+        font-size: 16px;
+        padding-inline: 1.25rem;
+    }
+
+    .email-col {
+        flex-direction: column;
+        align-items: flex-start !important;
+        span {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: 1360.98px) {
+    .reservation-box {
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+}

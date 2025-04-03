@@ -1,0 +1,88 @@
+@use './variables' as *;
+@use 'sass:color';
+
+.icheck-primary label {
+    font-weight: 400 !important;
+}
+
+.invalid-feedback strong {
+    font-weight: 400;
+}
+
+.auth-container {
+    min-height: 100vh;
+
+    .form-control {
+        border: 1px solid $grayishBlue;
+        color: $dark;
+        padding: 0.65rem 1rem;
+        height: auto;
+    }
+
+    .card {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        max-width: 450px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    p {
+        color: $dark;
+    }
+
+    .icheck-primary input {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .error.invalid-feedback {
+        position: absolute;
+        bottom: -20px;
+        font-size: 12px;
+    }
+
+    .input-group.mb-3 {
+        position: relative;
+        margin-bottom: 1.35rem !important;
+    }
+}
+
+.auth-cover-bg-image {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.auth-cover {
+    img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+.auth-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: inherit;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        rgba(255, 19, 97, 0.75) 100%
+    );
+    width: 50%;
+}
+
+@media (max-width: 575px) {
+    .auth-container {
+        height: auto;
+    }
+}

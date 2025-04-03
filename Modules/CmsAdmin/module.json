@@ -1,0 +1,11 @@
+{
+    "name": "CmsAdmin",
+    "alias": "cmsadmin",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\CmsAdmin\\app\\Providers\\CmsAdminServiceProvider"
+    ],
+    "files": []
+}

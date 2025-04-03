@@ -1,0 +1,59 @@
+@use './vars' as *;
+@use 'sass:color';
+
+.d-flex {
+    &.image-top {
+        flex-direction: column-reverse !important;
+    }
+
+    &.image-bottom {
+        flex-direction: column;
+    }
+
+    &.image-left {
+        align-items: flex-start;
+    }
+
+    &.image-center {
+        align-items: center;
+    }
+
+    &.image-right {
+        align-items: flex-end;
+    }
+
+    &.image-full {
+        figure,
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.line-height-5 {
+    line-height: 1.5;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.custom-layout {
+    .para-text {
+        font-size: 18px !important;
+        line-height: 50px !important;
+    }
+}
+
+.top-dt-info a {
+    color: $themeColor !important;
+}
+
+@media screen and (max-width: 680.98px) {
+    .custom-layout {
+        .para-text {
+            font-size: 14px !important;
+            line-height: 32px !important;
+        }
+    }
+}

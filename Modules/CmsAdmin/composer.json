@@ -1,0 +1,32 @@
+{
+    "name": "mi/cmsadmin",
+    "description": "cmsadmin module",
+    "type": "module",
+    "license": "EULA-Clause",
+    "authors": [
+        {
+            "name": "MI Developer",
+            "email": "developer_mi@yonefu.info",
+            "homepage": "https://miracleinterface.com.np",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\CmsAdmin\\": "app/",
+            "Modules\\CmsAdmin\\Database\\Factories\\": "database/factories/",
+            "Modules\\CmsAdmin\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\CmsAdmin\\Tests\\": "tests/"
+        }
+    }
+}

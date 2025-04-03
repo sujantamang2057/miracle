@@ -1,0 +1,39 @@
+/* custom scss */
+@forward '_backend/all.scss';
+
+/* adminlte */
+@import '~admin-lte/dist/css/adminlte.min.css';
+@import '~admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css';
+
+/* datatables */
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.min.css';
+@import '~datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css';
+@import '~datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css';
+
+// datatables rowreorder
+@import '~datatables.net-rowreorder-bs4/css/rowReorder.bootstrap4.min.css';
+
+/* fontawesome */
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+/* sweetalert2 */
+@import '~sweetalert2/dist/sweetalert2.min.css';
+@import '~@sweetalert2/theme-bootstrap-4/bootstrap-4.min.css';
+
+/* admin-lte plugins */
+@import '~daterangepicker/daterangepicker.css';
+
+/* select2 */
+@import '~admin-lte/plugins/select2/css/select2.min.css';
+@import '~admin-lte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css';
+
+/* bootstrap-switch */
+@import '~admin-lte/plugins/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css';
+
+/* Extra packages */
+/* fancybox */
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+
+// filepond
+@import '~filepond/dist/filepond.min.css';
+@import '~filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';

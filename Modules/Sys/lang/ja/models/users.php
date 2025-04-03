@@ -1,0 +1,47 @@
+<?php
+
+return [
+    'singular' => 'ユーザー管理',
+    'plural' => 'ユーザー一覧',
+    'fields' => [
+        'id' => 'ID',
+        'name' => '氏名',
+        'email' => 'Eメール',
+        'email_verified_at' => 'メール認証日',
+        'profile_image' => 'プロフィール画像',
+        'password' => 'パスワード',
+        'email_verified_at' => 'メール認証',
+        'password' => 'パスワード',
+        'current_password' => '旧いパスワード',
+        'confirm_password' => '確認パスワード',
+        'new_password' => '新パスワード',
+        'two_factor_secret' => '2要素認証コード',
+        'two_factor_recovery_codes' => '2要素リカバリコード',
+        'two_factor_confirmed_at' => '2要素認証の確認',
+        'remember_token' => 'トークンを記憶する',
+        'password_current' => '旧いパスワード',
+        'password_confirm' => '確認パスワード',
+        'password_new' => '新パスワード',
+        'active' => '有効状態',
+        'role' => 'ロール',
+    ],
+    'btn' => [
+        'profile' => 'プロフィール',
+        'sign_out' => 'ログアウト',
+    ],
+    'text' => [
+        'change_password' => 'パスワード更新',
+        'member_since' => 'ユーザー登録日',
+        'optimal_image_size' => '最適な画像サイズ: 100*100',
+        'profile' => 'プロフィール',
+        'profile_update' => 'プロフィール更新',
+    ],
+    'messages' => [
+        'change_password_success' => 'パスワードを変更しました。',
+        'change_password_error' => 'パスワードを変更にエラーが発生しました。',
+        'profile_access_error' => 'プロフィールアクセスエラー',
+        'profile_update_success' => 'プロフィールを更新しました。',
+        'profile_update_error' => 'プロフィール更新エラー',
+    ],
+    'optimal_image_size' => '最適な画像サイズ: 100*100',
+];

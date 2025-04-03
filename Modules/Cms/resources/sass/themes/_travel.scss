@@ -1,0 +1,368 @@
+@use './vars' as *;
+@use 'sass:color';
+
+.sc-travel-banner {
+    display: flex;
+    gap: 1.5rem;
+
+    figure {
+        flex: 1;
+
+        img {
+            aspect-ratio: 1.65;
+            object-fit: cover;
+            max-height: 580px;
+            width: 100%;
+        }
+    }
+
+    .travel-text {
+        width: 100%;
+        max-width: 450px;
+        padding-right: 2rem;
+
+        p {
+            margin-bottom: 2px;
+        }
+    }
+
+    .text-1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .text-2,
+    .text-3 {
+        font-size: 80px;
+        font-weight: 500;
+    }
+
+    .text-3 {
+        margin-left: -48%;
+    }
+}
+
+.sc-activity-resources {
+    background: $yellow;
+    padding-block: 5rem;
+}
+
+.information-activities {
+    .category-slider {
+        figure {
+            background: $cream;
+            padding: 3rem;
+        }
+
+        .slick-prev,
+        .slick-next {
+            bottom: 48% !important;
+            top: inherit;
+        }
+
+        .slick-prev {
+            left: 1.75rem;
+            right: inherit;
+        }
+
+        .slick-next {
+            right: 1.75rem;
+        }
+    }
+}
+
+.numbers--wrapper {
+    display: flex;
+    align-items: center;
+
+    .num-label {
+        width: 100%;
+        line-height: 1.2;
+        max-width: 400px;
+
+        p {
+            font-size: 42px;
+
+            &.big {
+                font-size: 65px;
+                margin-left: 4rem;
+            }
+        }
+    }
+
+    .num-list {
+        flex: 1;
+        width: 100%;
+
+        .d-inline-flex {
+            margin-top: -1.5rem;
+        }
+
+        span {
+            display: inline-block;
+
+            &.amt {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            &.counter {
+                font-size: 26px;
+                font-weight: bold;
+                position: relative;
+                padding: 0.5rem 1rem;
+                border-radius: 100%;
+                color: $white;
+
+                &:after {
+                    content: '';
+                    background: $pink;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    z-index: -1;
+                    border-radius: 100%;
+                }
+            }
+
+            &.unit {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.what-should--wrapper {
+    display: flex;
+    align-items: center;
+
+    .what-should-label {
+        width: 100%;
+        line-height: 1.2;
+        max-width: 400px;
+
+        .text-wrap {
+            width: fit-content;
+        }
+
+        p {
+            font-size: 24px;
+            text-align: center;
+
+            &.big {
+                font-size: 38px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .what-should-list {
+        font-size: 14px;
+        flex: 1;
+        width: 100%;
+
+        span {
+            display: inline-block;
+        }
+
+        .row .d-inline-flex {
+            padding-inline: 0;
+        }
+    }
+}
+
+.sc-information-grid {
+    .img-col {
+        img {
+            aspect-ratio: 0.75;
+            object-fit: cover;
+            max-height: 500px;
+            width: 100%;
+        }
+    }
+}
+
+.sc-activity-resources {
+    .ft-kaushan {
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
+.resources-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    img {
+        max-height: 160px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .numbers--wrapper,
+    .what-should--wrapper {
+        flex-direction: column;
+    }
+
+    .numbers--wrapper {
+        max-width: 900px;
+        margin-inline: auto;
+    }
+
+    .numbers--wrapper .num-label {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .numbers--wrapper .num-label p.big {
+        margin-left: 0;
+    }
+
+    .numbers--wrapper .num-list .d-inline-flex {
+        margin-top: -1rem;
+    }
+
+    .what-should--wrapper .what-should-label .text-wrap {
+        width: auto;
+    }
+
+    .sc-travel-banner .text-2,
+    .sc-travel-banner .text-3 {
+        font-size: 66px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .info-grid-wrap-2 .text-col {
+        order: 2;
+    }
+}
+
+@media (max-width: 680.98px) {
+    .info-grid-wrap .text-col {
+        order: 2;
+    }
+
+    .information-activities .category-slider figure {
+        padding: 2rem 2rem 4rem 2rem;
+    }
+
+    .numbers--wrapper .num-list .d-inline-flex {
+        margin-top: 1rem;
+    }
+
+    .numbers--wrapper .num-list .d-inline-flex {
+        margin-top: 0rem;
+        width: 100%;
+        margin-inline: 0 !important;
+        padding-inline: 0 !important;
+    }
+
+    .numbers--wrapper .num-list span.amt,
+    .numbers--wrapper .num-list span.unit {
+        font-size: 15px;
+    }
+
+    .numbers--wrapper .num-list span.counter {
+        font-size: 20px;
+        padding: 0.25rem 0.5rem;
+        color: $white;
+    }
+
+    .what-should-list {
+        .row {
+            flex-direction: row;
+
+            .d-inline-flex {
+                width: 46%;
+                flex-direction: column;
+                gap: 0 !important;
+
+                img {
+                    max-height: 85px;
+                }
+            }
+        }
+    }
+
+    .sc-travel-banner {
+        gap: 1rem;
+        flex-direction: column;
+
+        figure {
+            margin-bottom: 0;
+        }
+
+        .travel-text {
+            padding-inline: 1rem;
+        }
+
+        .text-1 {
+            font-size: 28px;
+        }
+
+        .text-2,
+        .text-3 {
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .text-3 {
+            margin-left: 0;
+
+            .text-white {
+                color: $dark !important;
+            }
+        }
+    }
+
+    .information-activities {
+        .category-slider {
+            figure {
+                padding: 1rem;
+            }
+
+            .slick-prev {
+                left: 0rem;
+            }
+
+            .slick-next {
+                right: 0rem;
+            }
+        }
+    }
+
+    .numbers--wrapper .num-label p {
+        font-size: 32px;
+        margin-bottom: 5px;
+        &.big {
+            font-size: 52px;
+        }
+    }
+
+    .what-should--wrapper .what-should-label p {
+        font-size: 20px;
+        &.big {
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+
+    .sc-activity-resources .ft-kaushan {
+        font-size: 36px;
+    }
+
+    .resources-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        grid-gap: 0.5rem 1rem;
+    }
+}

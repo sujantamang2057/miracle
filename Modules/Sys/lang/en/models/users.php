@@ -1,0 +1,45 @@
+<?php
+
+return [
+    'singular' => 'User',
+    'plural' => 'Users',
+    'fields' => [
+        'id' => 'Id',
+        'name' => 'Name',
+        'email' => 'Email',
+        'email_verified_at' => 'Email Verified At',
+        'profile_image' => 'Profile Image',
+        'password' => 'Password',
+        'current_password' => 'Current Password',
+        'confirm_password' => 'Confirm Password',
+        'new_password' => 'New Password',
+        'two_factor_secret' => 'Two Factor Secret',
+        'two_factor_recovery_codes' => 'Two Factor Recovery Codes',
+        'two_factor_confirmed_at' => 'Two Factor Confirmed At',
+        'remember_token' => 'Remember Token',
+        'password_current' => 'Current Password',
+        'password_confirm' => 'Confirm Password',
+        'password_new' => 'New Password',
+        'active' => 'Active',
+        'role' => 'Role',
+    ],
+    'btn' => [
+        'profile' => 'Profile',
+        'sign_out' => 'Sign Out',
+    ],
+    'text' => [
+        'change_password' => 'Change Password',
+        'member_since' => 'Member Since',
+        'optimal_image_size' => 'Optimal Image Size: 100*100',
+        'profile' => 'Profile',
+        'profile_update' => 'Profile Update',
+    ],
+    'messages' => [
+        'change_password_success' => '[User] Password Changed successfully.',
+        'change_password_error' => '[User] Password Change error!',
+        'profile_access_error' => 'Profile access error!',
+        'profile_update_success' => 'Profile updated successfully.',
+        'profile_update_error' => 'Profile update error!',
+    ],
+    'optimal_image_size' => 'Optimal Image Size: 100*100',
+];

@@ -1,0 +1,158 @@
+@use './variables' as *;
+@use 'sass:color';
+
+.bg-yellow {
+    background-color: $yellow !important;
+}
+
+.bg-navy {
+    background-color: $navy !important;
+}
+
+.alert {
+    padding: 0.5rem 1rem;
+}
+
+.alert-success {
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+}
+
+.alert-warning {
+    color: #856404 !important;
+    background-color: #fff3cd !important;
+    border-color: #ffeeba !important;
+}
+
+.alert-danger {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+}
+
+.small-box .small-box-footer {
+    color: $white !important;
+}
+
+.bootstrap-switch {
+    width: 100px !important;
+
+    span {
+        min-width: 50px !important;
+        padding: 0 !important;
+        padding-right: 4px;
+        font-size: 13px !important;
+    }
+
+    .bootstrap-switch-handle-off,
+    .bootstrap-switch .bootstrap-switch-handle-on,
+    .bootstrap-switch .bootstrap-switch-label {
+        padding: 3px 0 !important;
+        font-weight: 400;
+        font-size: 13px !important;
+    }
+}
+
+.url_type .bootstrap-switch {
+    width: 140px !important;
+
+    span {
+        min-width: 70px !important;
+    }
+}
+
+.url_target .bootstrap-switch {
+    width: 130px !important;
+
+    span {
+        min-width: 65px !important;
+    }
+}
+
+.dataTables_length,
+.dataTables_info,
+.dataTables_paginate {
+    font-size: 13px;
+}
+
+.no-image .caption {
+    height: 100% !important;
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 600;
+}
+
+.temp-image.img-gallery-list a[data-fancybox='gallery'] {
+    margin-right: 18px;
+}
+
+.temp-image.col-sm-2 {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    .remove-tmp-image.btn.btn-danger.btn-xs {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.php-info {
+    td.e {
+        min-width: 220px;
+    }
+
+    .h td {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.swal2-title {
+    font-size: 1.1rem;
+}
+
+.swal2-actions {
+    button {
+        min-width: 90px;
+    }
+
+    .swal2-confirm {
+        background-color: $blue;
+        color: $white;
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
+    .swal2-cancel {
+        background-color: $red;
+        color: $white;
+        &:hover {
+            background-color: $red;
+            color: $white;
+        }
+    }
+}
+
+.callout {
+    padding: 0.75rem;
+    h6 {
+        font-size: 14px;
+    }
+}
+
+#htmlContent .callout {
+    margin-bottom: 0 !important;
+    margin-top: 1rem;
+}
+
+.row.alert-msg .alert {
+    margin-bottom: 0;
+    margin-top: 1rem;
+}

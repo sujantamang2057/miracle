@@ -1,0 +1,32 @@
+{
+    "name": "mi/sys",
+    "description": "sys module",
+    "type": "module",
+    "license": "EULA-Clause",
+    "authors": [
+        {
+            "name": "MI Developer",
+            "email": "developer_mi@yonefu.info",
+            "homepage": "https://miracleinterface.com.np",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Sys\\": "app/",
+            "Modules\\Sys\\Database\\Factories\\": "database/factories/",
+            "Modules\\Sys\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Sys\\Tests\\": "tests/"
+        }
+    }
+}
